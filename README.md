@@ -7,7 +7,10 @@ QuickDesk is a simple, easy-to-use help desk solution designed to streamline com
 * Pruthviraj Pasee
 
 # Release (v1)
-* https://quick-desk-solve-it.vercel.app/ 
+* https://quick-desk-solve-it.vercel.app/
+
+# Video 
+* https://drive.google.com/file/d/1aRxWp9_4_UZzfb-8Od_dX7FwH1_qN6-J/view?usp=drivesdk
 
 ---
 
