@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* QuickDesk Design System - Beautiful help desk application
+All colors MUST be HSL. Core palette: Deep Purple (#6A0DAD), White, Black
+*/
+
+@layer base {
+  :root {
+    /* Core Brand Colors */
+    --primary: 278 94% 35%;              /* Deep Purple #6A0DAD */
+    --primary-light: 278 94% 45%;        /* Lighter purple */
+    --primary-dark: 278 94% 25%;         /* Darker purple */
+    --primary-foreground: 0 0% 100%;     /* White text on purple */
+
+    /* Background System */
+    --background: 0 0% 100%;             /* Pure white */
+    --background-secondary: 0 0% 98%;    /* Subtle off-white */
+    --foreground: 0 0% 9%;               /* Near black text */
+
+    /* Card System */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+    --card-hover: 278 94% 97%;           /* Very light purple tint */
+
+    /* Interactive Elements */
+    --secondary: 278 30% 96%;            /* Light purple background */
+    --secondary-foreground: 278 94% 25%; /* Dark purple text */
+    --accent: 278 94% 35%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Status Colors */
+    --success: 142 76% 36%;              /* Green for resolved */
+    --success-foreground: 0 0% 100%;
+    --warning: 45 93% 47%;               /* Orange for in-progress */
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;            /* Red for critical */
+    --destructive-foreground: 0 0% 100%;
+
+    /* UI Elements */
+    --border: 278 20% 90%;               /* Light purple border */
+    --input: 278 20% 95%;                /* Input background */
+    --ring: 278 94% 35%;                 /* Focus ring */
+    --muted: 278 20% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(278 94% 35%), hsl(278 94% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(278 94% 35%), hsl(278 94% 25%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(278 94% 98%));
+
+    /* Shadows */
+    --shadow-primary: 0 10px 25px -5px hsl(278 94% 35% / 0.1);
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-elegant: 0 20px 40px -10px hsl(278 94% 35% / 0.15);
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 25%;
+    --sidebar-primary: 278 94% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 278 30% 96%;
+    --sidebar-accent-foreground: 278 94% 25%;
+    --sidebar-border: 278 20% 90%;
+    --sidebar-ring: 278 94% 35%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Dark Mode - Enhanced contrast and readability */
+    --background: 0 0% 5%;               /* Very dark background */
+    --background-secondary: 0 0% 8%;     /* Slightly lighter for cards */
+    --foreground: 0 0% 98%;              /* Near white text for maximum contrast */
+    
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+    --card-hover: 278 30% 12%;           /* Subtle purple hover */
+
+    --primary: 278 94% 55%;              /* Brighter purple for dark mode */
+    --primary-light: 278 94% 65%;
+    --primary-dark: 278 94% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 278 15% 15%;            /* Dark purple-tinted background */
+    --secondary-foreground: 278 50% 85%; /* Light purple text */
+    --accent: 278 94% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 0 0% 12%;                   /* Darker muted areas */
+    --muted-foreground: 0 0% 70%;        /* Better contrast for muted text */
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --border: 278 15% 20%;               /* Lighter border for visibility */
+    --input: 278 15% 12%;                /* Dark input with purple tint */
+    --ring: 278 94% 55%;
+
+    /* Enhanced status colors for dark mode */
+    --success: 142 76% 50%;              /* Brighter green */
+    --success-foreground: 0 0% 100%;
+    --warning: 45 93% 60%;               /* Brighter orange */
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 65%;            /* Brighter red */
+    --destructive-foreground: 0 0% 100%;
+
+    /* Enhanced dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(278 94% 55%), hsl(278 94% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(278 94% 45%), hsl(0 0% 5%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 8%), hsl(278 30% 10%));
+
+    /* Enhanced dark shadows with purple glow */
+    --shadow-primary: 0 10px 25px -5px hsl(278 94% 35% / 0.4);
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.6);
+    --shadow-elegant: 0 20px 40px -10px hsl(278 94% 35% / 0.3);
+
+    /* Enhanced dark sidebar */
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 278 94% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 278 15% 15%;
+    --sidebar-accent-foreground: 278 50% 85%;
+    --sidebar-border: 278 15% 18%;
+    --sidebar-ring: 278 94% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
