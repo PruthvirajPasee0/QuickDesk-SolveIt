@@ -1,73 +1,62 @@
-# Welcome to your Lovable project
+# QuickDesk
 
-## Project info
+QuickDesk is a simple, easy-to-use help desk solution designed to streamline communication between users and support teams. The system allows users to raise support tickets and enables support staff to efficiently manage and resolve them. Our goal is to provide a straightforward and effective ticketing system without unnecessary complexity.
 
-**URL**: https://lovable.dev/projects/e75b8f9d-b315-432a-8f8c-c7886267ffe2
+# Team Members
+  Rajan Pulse
+  Pruthviraj Pasee
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+### For All Users
+* **User Authentication**: Secure registration and login for all users.
+* **Email Notifications**: Stay informed with email notifications for ticket creation and status changes.
+* **Search and Filtering**: Easily find tickets with options to filter by status, category, and more.
+* **Ticket Upvoting/Downvoting**: Users can upvote or downvote questions to prioritize them.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e75b8f9d-b315-432a-8f8c-c7886267ffe2) and start prompting.
+### For End Users (Employees/Customers)
+* **Ticket Creation**: Create support tickets with a subject, description, category, and optional attachments.
+* **Ticket Tracking**: View and track the status of all your submitted tickets.
+* **Ticket Management**: Add comments and reply to your own tickets as they are being processed.
+* **User Profile**: Manage your profile, settings, and notification preferences.
 
-Changes made via Lovable will be committed automatically to this repo.
+### For Support Agents
+* **Agent Dashboard**: Manage tickets from a central dashboard with queues for "My Tickets" and "All Tickets."
+* **Ticket Actions**: Update ticket statuses, add comments, and respond to user queries.
+* **Ticket Workflow**: A clear ticket status flow: **Open** → **In Progress** → **Resolved** → **Closed**.
 
-**Use your preferred IDE**
+### For Admins
+* **User Management**: Manage user roles and permissions within the system.
+* **Category Management**: Create and manage different ticket categories to organize support requests effectively.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## User Flow
 
-Follow these steps:
+1.  A user registers or logs in to their account.
+2.  They create a new ticket, providing details like a subject, description, and category.
+3.  The ticket is automatically set to the "Open" status.
+4.  A support agent picks up the ticket, updates its status, and begins working on it.
+5.  Users receive email updates and can reply to the ticket if needed.
+6.  Once the issue is resolved, the agent closes the ticket.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Project Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
+### End User Screens
+* **Dashboard**: A central hub with filtering, searching, sorting, and pagination for easy ticket management.
+* **Ticket Creation**: A form with validation for creating new tickets, including an attachment option and category selector.
+* **Ticket Detail**: A detailed view of a ticket, featuring a threaded conversation timeline.
+* **Profile**: A section for managing user settings and notification preferences.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### Support Agent Screens
+* **Agent Dashboard**: A specialized dashboard with multiple ticket queues to efficiently manage assigned and unassigned tickets.
+* **Ticket Actions**: A dedicated interface for replying, sharing, and updating tickets.
+* **Ticket Creation**: Agents can also create tickets on behalf of users.
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e75b8f9d-b315-432a-8f8c-c7886267ffe2) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Admin Screens
+* **User Management**: Tools to manage users, roles, and permissions.
+* **Category Management**: A dedicated section for creating, editing, and deleting ticket categories.
