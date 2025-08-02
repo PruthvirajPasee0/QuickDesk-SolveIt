@@ -3,8 +3,11 @@
 QuickDesk is a simple, easy-to-use help desk solution designed to streamline communication between users and support teams. The system allows users to raise support tickets and enables support staff to efficiently manage and resolve them. Our goal is to provide a straightforward and effective ticketing system without unnecessary complexity.
 
 # Team Members
-  Rajan Pulse
-  Pruthviraj Pasee
+* Rajan Pulse
+* Pruthviraj Pasee
+
+# Release (v1)
+* https://quick-desk-solve-it.vercel.app/ 
 
 ---
 
