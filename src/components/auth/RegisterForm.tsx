@@ -86,7 +86,7 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({ onToggleMode }) => {
               <SelectContent>
                 <SelectItem value="end-user">End User</SelectItem>
                 <SelectItem value="support-agent">Support Agent</SelectItem>
-                <SelectItem value="admin">Administrator</SelectItem>
+                
               </SelectContent>
             </Select>
           </div>
